@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+}
+
+main {
+  @apply p-3 max-w-4xl mx-auto;
+}
+
+header {
+  @apply flex justify-between mt-5 mb-12 items-center;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav {
+  @apply flex gap-4;
+}
+
+img {
+  max-width: 100%;
+}
+
+.post {
+  margin-block: .5rem;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 20px;
+}
+
+.post .texts h2 {
+  @apply m-0 text-2xl;
+}
+
+
+.post p.info {
+  @apply my-2 mx-0 text-[#888] text-xs font-bold whitespace-nowrap flex gap-3
+}
+
+.post p.info a.author {
+  @apply text-[#333]
+}
+
+.post p.summary{
+  @apply my-3 mx-0 leading-5  
+}
+
+form.login form.register {
+  @apply max-w-md mx-auto
+}
+
+form input {
+@apply w-full block my-3 py-1 px-2 border border-solid border-[#ddd] rounded-md bg-[#fff]
+}
+
+form button {
+  @apply w-full block bg-[#555] mx-auto text-white rounded-md py-3 px-0 
+}
+
+form h1 {
+  @apply text-center text-3xl font-bold
+}
